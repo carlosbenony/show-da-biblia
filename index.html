@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas Bíblicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="welcome-card">
+        <h1>Bem-vindo ao Show da Bíblia</h1>
+        <p>Aprenda a palavra de Deus se divertindo!</p>
+        <button onclick="startGame()">Iniciar Jogo</button>
+    </div>
+    <div id="game-card" class="hidden">
+        <h2 id="question"></h2>
+        <div id="options">
+            <button id="option0" onclick="answerQuestion(0)"></button>
+            <button id="option1" onclick="answerQuestion(1)"></button>
+            <button id="option2" onclick="answerQuestion(2)"></button>
+            <button id="option3" onclick="answerQuestion(3)"></button>
+        </div>
+        <div id="status">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Vidas: <span id="lives">3</span></p>
+            <p>Pulos: <span id="skips">2</span></p>
+
+        </div>
+        <div id="status2">
+            <p>Tempo: <span id="time">60</span> segundos</p>
+        </div>
+        <div id="action-buttons">
+            <button id="skip-button" onclick="skipQuestion()">Pular</button>
+            <button id="pray-button" onclick="showPrayerCard()">Orar</button>
+        </div>
+        <div id="message" class="hidden"></div>
+    </div>
+    <div id="prayer-card" class="hidden">
+        <h2>Escolha uma carta de oração</h2>
+        <div class="prayer-cards">
+            <div class="prayer-card" onclick="revealNumber(0)">?</div>
+            <div class="prayer-card" onclick="revealNumber(1)">?</div>
+            <div class="prayer-card" onclick="revealNumber(2)">?</div>
+            <div class="prayer-card" onclick="revealNumber(3)">?</div>
+        </div>
+        <div id="prayer-message" class="hidden"></div>
+    </div>
+    <script src="questions.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

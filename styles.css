@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-card,
+#welcome-card,
+#prayer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#options button {
+    margin: 5px 0;
+}
+
+#status {
+    margin: 20px 0;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.prayer-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.prayer-card {
+    background-color: #007bff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    width: 50px;
+}
+
+.prayer-card:hover {
+    background-color: #0056b3;
+}
+
+#skip-button,
+#pray-button {
+    background-color: #d3d3d3;
+    color: #000;
+    font-size: 14px;
+    width: 48%;
+    margin: 5px 1%;
+}
+
+#skip-button:hover,
+#pray-button:hover {
+    background-color: #b0b0b0;
+}
+
+#action-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#status {
+    display: flex;
+    justify-content: space-around;
+    /* Distribui os itens com espaço igual entre eles */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#status p {
+    margin: 0 10px;
+    /* Espaçamento horizontal entre os itens */
+}
